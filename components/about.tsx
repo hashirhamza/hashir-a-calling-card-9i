@@ -44,6 +44,15 @@ export function About() {
           <li className="rotate-2">
             <SkillTag tone="sky" size="md">Python</SkillTag>
           </li>
+          <li className="-rotate-1">
+            <SkillTag tone="mint" size="md">Generative AI</SkillTag>
+          </li>
+          <li className="rotate-1">
+            <SkillTag tone="butter" size="md">LLMs</SkillTag>
+          </li>
+          <li className="-rotate-2">
+            <SkillTag tone="blush" size="md">RAG</SkillTag>
+          </li>
         </ul>
       </div>
     </section>
