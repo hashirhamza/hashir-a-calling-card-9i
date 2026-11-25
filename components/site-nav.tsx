@@ -6,7 +6,7 @@ const navItems = [
 
 export function SiteNav() {
   return (
-    <header className="flex items-center justify-between gap-3 px-4 py-4 sm:px-6">
+    <header className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 px-4 py-4 sm:px-6">
       <nav aria-label="Primary">
         <ul className="flex flex-wrap items-center gap-1.5">
           {navItems.map((item) => (
@@ -36,7 +36,7 @@ export function SiteNav() {
           href="#links"
           className="inline-flex items-center rounded-[3px] border border-ink bg-white px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-ink transition-colors hover:bg-ink hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep"
         >
-          Say hi
+          Find me online
         </a>
       </div>
     </header>
