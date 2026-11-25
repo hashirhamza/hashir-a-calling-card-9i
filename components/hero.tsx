@@ -2,10 +2,30 @@ import { ArrowUpRight } from 'lucide-react'
 import { SkillTag, type SkillTone } from '@/components/skill-tag'
 
 const skills: { label: string; tone: SkillTone; position: string; tilt: string }[] = [
-  { label: 'React', tone: 'mint', position: '-left-6 -top-5', tilt: '-rotate-6' },
-  { label: 'TypeScript', tone: 'butter', position: '-right-10 -top-4', tilt: 'rotate-3' },
-  { label: 'JavaScript', tone: 'blush', position: '-bottom-5 -left-12', tilt: 'rotate-2' },
-  { label: 'Python', tone: 'sky', position: '-bottom-4 -right-6', tilt: '-rotate-3' },
+  {
+    label: 'React',
+    tone: 'mint',
+    position: '-left-2 -top-7 md:-left-6 md:-top-5',
+    tilt: '-rotate-6',
+  },
+  {
+    label: 'TypeScript',
+    tone: 'butter',
+    position: '-right-2 -top-7 md:-right-10 md:-top-4',
+    tilt: 'rotate-3',
+  },
+  {
+    label: 'JavaScript',
+    tone: 'blush',
+    position: '-bottom-7 -left-2 md:-bottom-5 md:-left-12',
+    tilt: 'rotate-2',
+  },
+  {
+    label: 'Python',
+    tone: 'sky',
+    position: '-bottom-7 -right-2 md:-bottom-4 md:-right-6',
+    tilt: '-rotate-3',
+  },
 ]
 
 function Handle({ className }: { className: string }) {
@@ -26,7 +46,7 @@ export function Hero() {
     >
       <p className="font-hand text-lg text-muted-foreground sm:text-xl">hey, my name is</p>
 
-      <div className="relative mt-4 md:mt-8">
+      <div className="relative mt-10 md:mt-8">
         <div className="relative -rotate-2 border-2 border-deep bg-white/50 px-3 pb-1 pt-2 sm:px-8">
           <Handle className="-left-1 -top-1" />
           <Handle className="-right-1 -top-1" />
@@ -34,13 +54,13 @@ export function Hero() {
           <Handle className="-bottom-1 -right-1" />
           <h1
             id="hero-name"
-            className="whitespace-nowrap font-pixel text-[clamp(3.25rem,18vw,10rem)] uppercase leading-[0.85] tracking-tight text-ink"
+            className="whitespace-nowrap font-pixel text-[clamp(3rem,17vw,10rem)] uppercase leading-[0.85] tracking-tight text-ink"
           >
             Hashir A
           </h1>
         </div>
 
-        <ul aria-label="Skills" className="hidden md:block">
+        <ul aria-label="Skills">
           {skills.map((skill) => (
             <li key={skill.label} className={`absolute ${skill.position} ${skill.tilt}`}>
               <SkillTag tone={skill.tone}>{skill.label}</SkillTag>
@@ -49,15 +69,7 @@ export function Hero() {
         </ul>
       </div>
 
-      <ul aria-label="Skills" className="mt-6 flex flex-wrap justify-center gap-2 md:hidden">
-        {skills.map((skill) => (
-          <li key={skill.label} className={skill.tilt}>
-            <SkillTag tone={skill.tone}>{skill.label}</SkillTag>
-          </li>
-        ))}
-      </ul>
-
-      <p className="mt-8 inline-flex items-center gap-2 rounded-[3px] border border-ink/20 bg-white/70 px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-widest text-ink md:mt-12">
+      <p className="mt-12 inline-flex items-center gap-2 rounded-[3px] border border-ink/20 bg-white/70 px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-widest text-ink md:mt-12">
         <span aria-hidden="true" className="size-1.5 rounded-full bg-deep" />
         Software Developer
       </p>
@@ -83,7 +95,7 @@ export function Hero() {
         </span>
       </h2>
 
-      <div className="mt-8 flex flex-wrap justify-center gap-3">
+      <div id="links" className="mt-8 flex scroll-mt-24 flex-wrap justify-center gap-3">
         <a
           href="https://www.linkedin.com/in/hhashir/"
           target="_blank"

@@ -26,19 +26,11 @@ export function SiteNav() {
           ))}
         </ul>
       </nav>
-      <div className="flex items-center gap-2">
-        <span aria-hidden="true" className="hidden items-center gap-1.5 sm:flex">
-          <span className="size-3 rounded-full border border-ink/40 bg-blush" />
-          <span className="size-3 rounded-full border border-ink/40 bg-mint" />
-          <span className="size-3 rounded-full border border-ink/40 bg-sky" />
-        </span>
-        <a
-          href="#links"
-          className="inline-flex items-center rounded-[3px] border border-ink bg-white px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-ink transition-colors hover:bg-ink hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep"
-        >
-          Find me online
-        </a>
-      </div>
+      <span aria-hidden="true" className="hidden items-center gap-1.5 sm:flex">
+        <span className="size-3 rounded-full border border-ink/40 bg-blush" />
+        <span className="size-3 rounded-full border border-ink/40 bg-mint" />
+        <span className="size-3 rounded-full border border-ink/40 bg-sky" />
+      </span>
     </header>
   )
 }

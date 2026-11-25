@@ -1,7 +1,6 @@
 import { SiteNav } from '@/components/site-nav'
 import { Hero } from '@/components/hero'
 import { About } from '@/components/about'
-import { Links } from '@/components/links'
 
 export default function Page() {
   return (
@@ -11,7 +10,6 @@ export default function Page() {
         <main>
           <Hero />
           <About />
-          <Links />
         </main>
         <footer className="flex flex-col items-center gap-1 px-6 pb-10 pt-4 text-center">
           <p className="font-hand text-lg text-muted-foreground">thanks for stopping by</p>
