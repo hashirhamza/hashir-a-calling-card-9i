@@ -22,19 +22,19 @@ export function Hero() {
     <section
       id="top"
       aria-labelledby="hero-name"
-      className="flex flex-col items-center px-5 pb-16 pt-10 text-center sm:pt-14"
+      className="animate-hero-rise flex flex-col items-center px-4 pb-14 pt-8 text-center sm:px-5 sm:pb-16 sm:pt-14"
     >
       <p className="font-hand text-lg text-muted-foreground sm:text-xl">hey, my name is</p>
 
       <div className="relative mt-4 md:mt-8">
-        <div className="relative -rotate-2 border-2 border-deep bg-white/50 px-4 pb-1 pt-2 sm:px-8">
+        <div className="relative -rotate-2 border-2 border-deep bg-white/50 px-3 pb-1 pt-2 sm:px-8">
           <Handle className="-left-1 -top-1" />
           <Handle className="-right-1 -top-1" />
           <Handle className="-bottom-1 -left-1" />
           <Handle className="-bottom-1 -right-1" />
           <h1
             id="hero-name"
-            className="font-pixel text-[clamp(4.5rem,22vw,10rem)] uppercase leading-[0.85] tracking-tight text-ink"
+            className="whitespace-nowrap font-pixel text-[clamp(3.25rem,18vw,10rem)] uppercase leading-[0.85] tracking-tight text-ink"
           >
             Hashir A
           </h1>
@@ -62,7 +62,7 @@ export function Hero() {
         Software Developer
       </p>
 
-      <h2 className="mt-5 max-w-xl text-balance text-3xl font-bold leading-tight tracking-tight text-ink sm:text-5xl">
+      <h2 className="mt-5 max-w-xl text-balance text-[1.75rem] font-bold min-[360px]:text-3xl leading-tight tracking-tight text-ink sm:text-5xl">
         {'I build software that\u2019s '}
         <span className="relative whitespace-nowrap text-deep">
           easy to use.
@@ -88,7 +88,7 @@ export function Hero() {
           href="https://www.linkedin.com/in/hhashir/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 rounded-[3px] bg-ink px-4 py-2.5 font-mono text-[11px] font-semibold uppercase tracking-wider text-paper shadow-[3px_3px_0_var(--deep)] transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep"
+          className="press-card inline-flex min-h-11 items-center gap-1.5 rounded-[3px] bg-ink px-5 font-mono text-[11px] font-semibold uppercase tracking-wider text-paper shadow-[3px_3px_0_var(--deep)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep"
         >
           LinkedIn
           <ArrowUpRight className="size-3.5" aria-hidden="true" />
@@ -97,7 +97,7 @@ export function Hero() {
           href="https://github.com/hashirhamza"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 rounded-[3px] border border-ink bg-white px-4 py-2.5 font-mono text-[11px] font-semibold uppercase tracking-wider text-ink transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep"
+          className="press-card inline-flex min-h-11 items-center gap-1.5 rounded-[3px] border border-ink bg-white px-5 font-mono text-[11px] font-semibold uppercase tracking-wider text-ink shadow-[3px_3px_0_var(--deep)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep"
         >
           GitHub
           <ArrowUpRight className="size-3.5" aria-hidden="true" />

@@ -37,7 +37,7 @@ export function Links() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center justify-between gap-4 border border-ink bg-white px-5 py-5 shadow-[4px_4px_0_var(--deep)] transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-deep"
+              className="press-card group relative flex min-h-16 items-center justify-between gap-4 border border-ink bg-white px-5 py-5 shadow-[4px_4px_0_var(--deep)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-deep"
             >
               <Tape className={`-top-3 left-1/2 -translate-x-1/2 -rotate-3 ${link.tape}`} />
               <span className="flex min-w-0 flex-col gap-1">
